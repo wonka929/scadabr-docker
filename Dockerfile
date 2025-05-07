@@ -53,7 +53,7 @@ WORKDIR ${MYDIR}
 COPY . .
 
 # Download Tomcat 9
-RUN wget -q -nc --no-check-certificate https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+RUN wget -q -nc --no-check-certificate https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.104/bin/apache-tomcat-9.0.104.tar.gz
 RUN tar -zxf apache-tomcat-*.tar.gz -C ${MYDIR} && rm -rf apache-tomcat-*.tar.gz
 RUN ln -sf apache-tomcat-* tomcat
 
