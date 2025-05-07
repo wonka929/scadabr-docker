@@ -16,7 +16,7 @@ services:
   scadabr:
     container_name: scadabr
     hostname: scadabr
-    image: scadabr:v1
+    image: scadabr:v1.2
     build:
       context: .
       dockerfile: Dockerfile
